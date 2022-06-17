@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest Repo
-      - uses: actions/checkout@main
+        uses: actions/checkout@main
       
       - name: Generate Deployment package
         run: zip -r deploy.zip * -x "**node_modules**"
